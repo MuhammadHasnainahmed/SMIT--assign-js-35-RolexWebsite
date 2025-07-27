@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rolex Login</title>
+  <link rel="stylesheet" href="signuporlogin.css" />
+  <link rel="shortcut icon" href="img/28202-3-rolex-logo-clipart.png" type="image/x-icon">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <img src="img/28202-3-rolex-logo-clipart.png" alt="Rolex Logo" class="logo" />
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Login to your Rolex account</p>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p class="footer-text">Don't have an account? <a href="signup.html">Sign up</a></p>
+      <p class="footer-text"> Reset Your Password <a href="comformemail.html">Forget Password</a></p>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="login.js" type="module"></script>
+</body>
+</html>
