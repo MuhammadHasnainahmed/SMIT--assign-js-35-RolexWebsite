@@ -20,7 +20,7 @@ emailcomform.addEventListener("submit", async (e) => {
     let email = comformemail.value;
 
    const { data, error } = await client.auth.resetPasswordForEmail(email, {
-  redirectTo: 'http://127.0.0.1:5501/updatepassword.html',
+//   redirectTo: 'http://127.0.0.1:5501/updatepassword.html',
 })
 
 
@@ -32,6 +32,7 @@ emailcomform.addEventListener("submit", async (e) => {
     } else {
         console.log("Reset email sent:", data);
         alert("Reset email sent! Please check your inbox.");
+        window.location.href = "updatepassword.html";
 
 
     }
